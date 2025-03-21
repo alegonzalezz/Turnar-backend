@@ -1,0 +1,8 @@
+# Ignorar archivos de variables de entorno
+.env
+
+# Ignorar la carpeta de salida de TypeScript
+dist/
+
+# Ignorar las dependencias de node
+node_modules/
