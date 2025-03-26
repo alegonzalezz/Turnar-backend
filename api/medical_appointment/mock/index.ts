@@ -6,7 +6,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
     }
 
     const missingParams: string[] = [];
-    const { patient_name, patient_surname, dni, years, medical_coverage, priority, description } = req.body;
+    const { patient_name, patient_surname, dni, years, medical_coverage, priority, description } = req.body || {};
 
     if (!patient_name) missingParams.push('MISSING_PATIENT_NAME_PARAM');
     if (!patient_surname) missingParams.push('MISSING_PATIENT_SURNAME_PARAM');
