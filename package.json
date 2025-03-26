@@ -5,6 +5,7 @@
     "typescript": "^5.8.2"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.49.3",
     "@vercel/node": "^5.1.14"
   }
 }

@@ -27,6 +27,9 @@ Para instalar la versión recomendada:
 
 ```nvm install v21.1.0```
 
+### 4. Install Supabase
+
+```npm install @supabase/supabase-js```
 
 ## Enviroment
 
