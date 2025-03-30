@@ -1,7 +1,14 @@
 import { VercelRequest, VercelResponse } from '@vercel/node';
 import {supabase} from "../../common/supabaseClient";
 
+import Cors from 'cors';
+import {runMiddleware} from "../../common/runMiddleware";
+
+const cors = Cors({origin:true})
+
+
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+    await runMiddleware(req, res, cors);
     if (req.method == 'POST') {
         const missingParams: string[] = [];
         const { patient_name, patient_surname, dni, years, medical_coverage, priority, description } = req.body || {};

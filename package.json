@@ -1,11 +1,13 @@
 {
   "devDependencies": {
+    "@types/cors": "^2.8.17",
     "@types/node": "^22.13.11",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.3",
-    "@vercel/node": "^5.1.14"
+    "@vercel/node": "^5.1.14",
+    "cors": "^2.8.5"
   }
 }
