@@ -2,7 +2,7 @@ import { VercelRequest, VercelResponse } from '@vercel/node';
 import {supabase} from "../../common/supabaseClient";
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
-    if (req.method !== 'POST') {
+    if (req.method != 'POST') {
         return res.status(405).json({ message: 'Only POST requests are allowed' });
     }
 
